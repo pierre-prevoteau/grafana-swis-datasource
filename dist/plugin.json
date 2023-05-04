@@ -9,6 +9,7 @@
 
   "metrics": true,  
   "annotations": true,  
+  "alerting": true,
 
   "info": {
     "description": "DataSource plugin for SolarWinds via SWIS HTTP REST endpoint",
