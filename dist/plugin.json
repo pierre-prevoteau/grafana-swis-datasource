@@ -1,16 +1,15 @@
 {
+  "$schema": "https://raw.githubusercontent.com/grafana/grafana/master/docs/sources/developers/plugins/plugin.schema.json",
+  "type": "datasource",
   "name": "SolarWinds SWIS DataSource",
   "id": "solarwinds-swis-datasource",
-  "type": "datasource",
-
+  "metrics": true,
+  "backend": true,
+  "alerting": true,
+  "executable": "gpx_datasource_http_backend",
   "partials": {
     "config": "public/app/plugins/datasource/swis/partials/config.html"
   },
-
-  "metrics": true,  
-  "annotations": true,  
-  "alerting": true,
-
   "info": {
     "description": "DataSource plugin for SolarWinds via SWIS HTTP REST endpoint",
     "author": {
@@ -27,9 +26,8 @@
     "version": "1.0.0",
     "updated": "2019-05-24"
   },
-
   "dependencies": {
-    "grafanaVersion": "5.x.x",
+    "grafanaDependency": "^9.1.2",
     "plugins": [ ]
   }
 }
